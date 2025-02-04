@@ -1,0 +1,100 @@
+/* RESET STYLES: Normalize + Custom Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url('./fonts/Menlo-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('./fonts/Menlo-Bold.ttf'); 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'AdobeHandwriting-Ernie';
+  src: url('./fonts/AdobeHandwriting-Ernie.ttf'); 
+  font-weight: normal;
+}
+
+.menlo-regular {
+  font-family: 'Regular';
+}
+
+.menlo-bold {
+  font-family: 'Bold';
+}
+
+.ernie {
+  font-family: 'AdobeHandwriting-Ernie';
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Regular', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+  color: #333;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  height: 80vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 0 1rem;
+  }
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  background-image: 
+    linear-gradient(to right, lightgrey 1px, transparent 1px),
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+  background-size: 15px 15px; /* Adjust the size of the grid cells */
+  background-position: -7.5px -2px; /* Ensure the grid starts at the top-left corner */
+}
+
+p.contact-us {
+  letter-spacing: 1rem;
+  font-size: 1.2rem;
+}
+
+a {
+  display: block;
+  color: #333;
+}
+
+p.hiring-text {
+  font-size: 1.2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
